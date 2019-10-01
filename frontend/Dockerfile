@@ -7,5 +7,7 @@ COPY package*.json ./
 # Copy source code
 COPY . .
 
+RUN yarn install
+
 # Start service
 CMD [ "yarn", "start" ]
